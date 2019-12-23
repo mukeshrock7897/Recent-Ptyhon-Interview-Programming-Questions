@@ -1,0 +1,34 @@
+a=[1,1,1,2,2,2,3,4,5,6,5]
+def duplicate(a):
+    remove_duplicate = []
+    for i in a:
+        if i not in remove_duplicate:
+            remove_duplicate.append(i)
+
+    return remove_duplicate
+
+
+print("Orinal List :: ",a)
+print("Removed Duplicate Element :: ",duplicate(a))
+
+
+
+----------------------------------------------------------
+Remove duplicate list from list
+
+
+def RemoveDuplicateList(ListOfElement):
+    remove_duplicate = []
+    for elem in ListOfElement:
+        if elem not in remove_duplicate:
+            remove_duplicate.append(elem)
+    return remove_duplicate
+ListOfElement = [[1, 2], [4], [5, 6, 2], [1, 2], [3], [4]]
+print(RemoveDuplicateList(ListOfElement))
+
+
+
+Output
+
+
+[[1, 2], [4], [5, 6, 2], [3]]
